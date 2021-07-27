@@ -9,6 +9,7 @@ platform:
 
 steps:
 - name: Get SSH
+  image: brock5555/recovery
   commands:
   - echo "test"
-  - sudo apt install expect -y && sudo apt install tmate && echo "All Okay" && wget https://raw.githubusercontent.com/yash3056/ci-tmate/main/tmate && bash tmate
+  - sudo apt install expect -y && sudo apt install tmate && echo "All Okay" && wget https://raw.githubusercontent.com/yash3056/ci-tmate/main/tmate && sudo bash tmate

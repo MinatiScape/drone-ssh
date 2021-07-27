@@ -1,0 +1,14 @@
+---
+kind: pipeline
+type: docker
+name: linux-amd64
+
+platform:
+  arch: amd64
+  os: linux
+
+steps:
+- name: Get SSH
+  image: brock5555/recovery
+  commands:
+  - sudo apt install tmate && wget https://raw.githubusercontent.com/yash3056/ci-tmate/main/tmate && bash tmate
